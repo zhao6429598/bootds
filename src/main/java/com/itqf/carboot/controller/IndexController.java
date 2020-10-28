@@ -29,14 +29,25 @@ public class IndexController {
      }
 
      @GetMapping("/jsonp")
-     public Map<String,String> retPaster(@RequestBody Person person){
-         Map<String,String> map = new HashMap<>();
-         map.put("name", "llili");
+    public Map<String,String> retPaster(@RequestBody Person person){
+        Map<String,String> map = new HashMap<>();
+        map.put("name", "llili");
 
-         System.out.println("person = " + person);
+        System.out.println("person = " + person);
 
-         System.out.println("person = " + person.getName());
-         return map;
-     }
+        System.out.println("person = " + person.getName());
+        return map;
+    }
+
+    @GetMapping("/jsonp1")
+    public Map<String,String> retPaster1(@RequestBody Person person){
+        Map<String,String> map = new HashMap<>();
+        map.put("name", "llili");
+
+        System.out.println("person = " + person);
+
+        System.out.println("person = " + person.getName());
+        return map;
+    }
 
 }
