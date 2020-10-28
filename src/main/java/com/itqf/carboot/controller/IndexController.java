@@ -21,7 +21,7 @@ public class IndexController {
 
      @GetMapping("/index")
      public Map<String,String> retIndex(){
-
+         //index
          Map<String,String> map = new HashMap<>();
          map.put("name", "llili");
 
